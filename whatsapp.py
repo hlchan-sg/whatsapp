@@ -25,7 +25,7 @@ target = "Hello"   # person or group to send message to
 """Replace the below string with your own message"""
 s1 = "there is 4 quandrant"
 s2 = "which one you belong to?"
-s3 = "sent using python!"
+s3 = "bye! sent using python!"
 
 ### code to find elements in chrome
 """code to find target in http"""
@@ -44,6 +44,6 @@ time.sleep(10)
 input_box.send_keys(f'{s2}', Keys.ENTER)
 time.sleep(10)
 for i in range(3):
-    input_box.send_keys(f'{s3}?', Keys.ENTER)
+    input_box.send_keys(f'{i}?', Keys.ENTER)
     time.sleep(5)
 input_box.send_keys(f'{s3}', Keys.ENTER)
