@@ -11,7 +11,7 @@ from selenium.webdriver.common.by import By
 
 ### start whatsapp web on chrome
 chrome_path = 'C:\Python39\Scripts\chromedriver.exe'
-chrome_history = r'C:\Users\xxx\AppData\Local\Google\Chrome\User Data'   # change the xxx directory to your own
+chrome_history = r'C:\Users\xxx\AppData\Local\Google\Chrome\User Data\Default'   # change the xxx directory to your own
 options = webdriver.ChromeOptions()
 options.add_argument(f'user-data-dir={chrome_history}')
 driver = webdriver.Chrome(executable_path=chrome_path, options=options)
@@ -23,9 +23,9 @@ driver.implicitly_wait(20)
 target = "Hello"   # person or group to send message to
 
 """Replace the below string with your own message"""
-s1 = "i give you a like"
-s2 = "credit you S$0.01"
-s3 = "x 10 times, ok?"
+s1 = "there is 4 quandrant"
+s2 = "which one you belong to?"
+s3 = "sent using python!"
 
 ### code to find elements in chrome
 """code to find target in http"""
@@ -44,5 +44,6 @@ time.sleep(10)
 input_box.send_keys(f'{s2}', Keys.ENTER)
 time.sleep(10)
 for i in range(3):
-    input_box.send_keys(f'{s3}', Keys.ENTER)
+    input_box.send_keys(f'{s3}?', Keys.ENTER)
     time.sleep(5)
+input_box.send_keys(f'{s3}', Keys.ENTER)
