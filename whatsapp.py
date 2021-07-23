@@ -7,11 +7,11 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.options import Options
+
 
 ### start whatsapp web on chrome
 chrome_path = 'C:\Python39\Scripts\chromedriver.exe'
-chrome_history = r'C:\Users\Stephen\AppData\Local\Google\Chrome\User Data\Default'
+chrome_history = r'C:\Users\xxx\AppData\Local\Google\Chrome\User Data'   # change the xxx directory to your own
 options = webdriver.ChromeOptions()
 options.add_argument(f'user-data-dir={chrome_history}')
 driver = webdriver.Chrome(executable_path=chrome_path, options=options)
